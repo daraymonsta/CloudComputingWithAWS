@@ -41,7 +41,7 @@ fi
 
 sudo apt install sed
 # put the real database IP address in the next line
-sudo sed -i "s/<db-ip-address>/10.0.21.255/" ~/.bashrc
+sudo sed -i "s/<db-ip-address>/192.168.33.11/" ~/.bashrc
 source ~/.bashrc
 
 # install the app (must be after db vm is finished provisioning)
