@@ -2,6 +2,8 @@
 
 ## changed this line
 
+## added line to check can push using SSH
+
 ## Overview of topic/unit/week
 
 ### Big Picture
