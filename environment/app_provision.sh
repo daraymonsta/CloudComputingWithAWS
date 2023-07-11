@@ -27,6 +27,9 @@ sudo apt-get install nodejs -y
 # install forever
 sudo npm install forever -g
 
+# install pm2
+#sudo npm install pm2 -g
+
 # create global env variable (so app vm can connect to db)
 echo "Setting environment variable DB_HOST..."
 if grep -Fxq "export DB_HOST=mongodb://<db-ip-address>:27017/posts" ~/.bashrc
@@ -44,8 +47,10 @@ sudo apt install sed
 sudo sed -i "s/<db-ip-address>/192.168.33.11/" ~/.bashrc
 source ~/.bashrc
 
+
+
 # install the app (must be after db vm is finished provisioning)
-cd app/app
+cd repo/app
 npm install
 
 # seed database
@@ -53,10 +58,22 @@ echo "Clearing and seeding database..."
 node seeds/seed.js
 echo "  --> Done!"
 
+# ways to start the app:
+# 1. directly:
+
 # start the app (could also use 'npm start')
 #node app.js
 
+# 2. start in background using EITHER forever or pm2
+
+# using forever
 # kill previous app background processes
-forever stopall
+#forever stopall
 # start the app in the background with forever
-forever start app.js
+#forever start app.js
+
+# using pm2
+# kill previous app background processes
+#pm2 kill
+# start the app in the background with pm2
+#pm2 start app.js
