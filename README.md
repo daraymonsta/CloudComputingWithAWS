@@ -15,3 +15,5 @@ Added this line at 17:25 - check job 2 triggers
 Added this line at 17:31 - check git merge (using git commands)
 
 Added this line at 17:34 - check git push is successful after merge
+
+Added this line at 22:05 - check commands work starting on dev branch
