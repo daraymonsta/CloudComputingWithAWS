@@ -19,3 +19,5 @@ Added this line at 17:34 - check git push is successful after merge
 Added this line at 22:05 - check commands work starting on dev branch
 
 Added this line at 22:13 - check job 2's git push
+
+Added this line at 22:35 - check job 2's git push works after job 1
