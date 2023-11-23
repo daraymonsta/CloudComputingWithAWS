@@ -25,3 +25,5 @@ Added this line at 22:35 - check job 2's git push works after job 1
 Added this line at 10:20 - check what happens without SSH Agent plugin
 
 Added this line at 11:39 - check env var works in Job 2
+
+Added this line at 12:57 on Jenkins server (SSHed in)
